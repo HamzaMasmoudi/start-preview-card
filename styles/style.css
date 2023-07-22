@@ -1,0 +1,153 @@
+/* (main background) */
+/* (card background) */
+/*(accent) */
+/* (main heading, stats) */
+/* (main paragraph) */
+/* (stat headings) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#mobile {
+  display: none;
+}
+
+/*========
+
+MAIN CODE
+
+
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+
+==========*/
+.container {
+  min-width: 100%;
+  width: 111rem;
+  padding-right: 1px;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 30px -22px hsl(0, 0%, 100%);
+}
+.container .main-text {
+  width: 53%;
+  padding: 7.2rem 7.2rem 0px 7.2rem;
+}
+.container .main-text h1 {
+  font-size: 3.6rem;
+}
+.container .main-text h1 span {
+  color: rgb(171, 92, 219);
+}
+.container .main-text p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  padding-top: 2.7rem;
+  padding-right: 4rem;
+  line-height: 2.4rem;
+}
+.container .main-text .stats {
+  padding-top: 7.5rem;
+  padding-right: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .main-text .stats .box-stat {
+  display: flex;
+  flex-direction: column;
+}
+.container .main-text .stats .box-stat h2 {
+  padding-bottom: 0.6rem;
+  padding-left: 0.2rem;
+  font-size: 2.3rem;
+}
+.container .main-text .stats .box-stat h3 {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.container .main-text .stats .box {
+  padding-left: 4px;
+}
+.container .main-image {
+  width: 50.4%;
+  background-color: rgb(171, 92, 219);
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.container .main-image img {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+@media screen and (max-width: 1115px) {
+  html {
+    font-size: 45%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 50rem;
+    flex-direction: column-reverse;
+  }
+  .container .main-image {
+    width: 100%;
+    height: 30rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .container .main-image img {
+    display: none;
+  }
+  .container .main-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+  }
+  .container .main-text h1,
+  .container .main-text p {
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+  }
+  .container .main-text .stats {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .container .main-text .stats .box-stat {
+    align-items: center;
+  }
+  .container .main-text .stats .box {
+    padding: 3rem 0rem;
+  }
+  #mobile {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
